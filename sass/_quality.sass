@@ -12,7 +12,7 @@
 	&__carousel
 		top: -120px
 		position: relative
-		.carousel_wrapper
+		.carousel
 			width: 72.3rem
 			height: 72.3rem
 			border-radius: 50%
@@ -21,26 +21,86 @@
 			margin-bottom: 11rem
 			left: 50px
 			position: relative
-			.item
-
-		// .circle
-		// 	width: 81px
-		// 	height: 81px
-		// 	border-radius: 50%
-		// 	background-color: red
-		// 	filter: saturate(3)
-		// 	.icon
-		// 		width: 81px
-		// 		height: 81px
-		// 		border-radius: 50%
-		// 		// height: 100%
-		// 		// width: 100%
-		// 		background-repeat: no-repeat
-		// 		background-image: url("../img/img1.png")
-		// 		background-size: 75%
-		// 		background-color: #fff
-		// 		background-position: center
-		// 		filter: brightness(10);
+			padding: 9rem
+			.carousel_pict
+				position: absolute
+				top: 5rem
+				bottom: 0
+				right: -42rem
+				margin: auto
+			&__center
+				background-color: #fff
+				width: 100%
+				height: 100%
+				border-radius: 50%
+				display: flex
+				align-items: center
+				justify-content: center
+				&__text
+					font-size: 2.5rem
+					color: #4f4f4f
+					transition: opacity .3s
+					&.change
+						opacity: 1
+					h6
+						color: $blueColor
+						font-weight: 500
+						text-transform: uppercase
+						margin-bottom: 1rem
+			&__icon
+				border-radius: 50%
+				background-color: #fff
+				width: 8rem
+				height: 8rem
+				position: absolute
+				cursor: pointer
+				background-position: center
+				background-repeat: no-repeat
+				background-size: 60%
+				transition: all .3s
+				.carousel__center__text
+					opacity: 0
+				img
+					position: absolute
+					top: 0
+					bottom: 0
+					right: 0
+					left: 0
+					margin: auto
+				&.active
+					background-color: $yellowColor
+					transform: scale(1.4)
+					img
+						filter: brightness(0) invert(1)
+				&:first-of-type
+					left: .5rem
+					bottom: 0
+					top: 0
+					margin: auto
+				&:nth-of-type(2)
+					left: 8.5rem
+					top: 11rem
+				&:nth-of-type(3)
+					left: 25rem
+					top: 1.5rem
+				&:nth-of-type(4)
+					right: 20rem
+					top: 3rem
+				&:nth-of-type(5)
+					right: 5rem
+					top: 16rem
+				&:nth-of-type(6)
+					right: 5.5rem
+					bottom: 15rem
+				&:nth-of-type(7)
+					right: 20rem
+					bottom: 3rem
+				&:nth-of-type(8)
+					left: 25rem
+					bottom: 1.2rem
+				&:nth-of-type(9)
+					left: 8.6rem
+					bottom: 11rem
 	&__china
 		&:after
 			display: table

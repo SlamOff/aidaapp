@@ -32,9 +32,12 @@
 		&__pict
 			right: 0
 	.quality
+		overflow: hidden
 		&__carousel
-			.carousel_wrapper
+			.carousel
 				left: 0
+				.carousel_pict
+					max-width: 500px
 		.section_title
 			.section_desc
 				line-height: 6.5rem
@@ -99,11 +102,16 @@
 				font-size: 11rem
 		&__stock
 			margin-right: 1em
-	.convenience__title
-		font-size: 4rem
-		top: 0
+	.convenience
+		margin-bottom: 8rem
+		&__title
+			font-size: 4rem
+			top: 0
+		.slider_wrapper
+			left: 40%
+			top: 348px
 	html body .section_title--right
-		margin-left: 8.2em
+		margin-left: 8.2em	
 	.quality
 		.section_title
 			font-size: 7rem
@@ -111,9 +119,15 @@
 				line-height: 5rem
 				font-size: 4rem
 		&__carousel
-			.carousel_wrapper
-				width: 60rem
-				height: 60rem
+			top: 0
+			.carousel
+				left: 0
+				.carousel_pict
+					max-width: 440px
+		&__china 
+			.section_title
+				float: none
+				margin-bottom: 4rem
 	.price__content__photo img, .price__content__text img
 		max-width: 240px
 		margin-bottom: 85px
@@ -146,7 +160,11 @@
 				margin: 0 2rem
 		&__phone
 			font-size: 2rem
-
+	.slider_wrapper::-webkit-scrollbar
+		width: 35px
+		height: 15px
+		margin-top: 20px
+		cursor: pointer
 
 @media only screen and (max-width : 767px)
 	html

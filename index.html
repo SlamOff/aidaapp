@@ -5,7 +5,6 @@
 	<title>Айда Туда</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<link href='libs/slider/feature.presenter.css' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
@@ -19,14 +18,14 @@
 				</div>
 				<nav class="header__navigation">
 					<ul>
-						<li>Выгоды</li>
-						<li>Прайс</li>
-						<li>Адрес</li>
-						<li class="last">Инструкция по первому запуску</li>
-						<li class="bottom">Главная</li>
-						<li class="bottom">Аэродиван </li>
-						<li class="bottom">Качество</li>
-						<li class="bottom">Цена</li>
+						<a href="#"><li>Выгоды</li></a>
+						<a href="#"><li>Прайс</li></a>
+						<a href="#"><li>Адрес</li></a>
+						<a href="#"><li class="last">Инструкция по первому запуску</li></a>
+						<a href="#"><li class="bottom">Главная</li></a>
+						<a href="#"><li class="bottom">Аэродиван </li></a>
+						<a href="#"><li class="bottom">Качество</li></a>
+						<a href="#"><li class="bottom">Цена</li></a>
 					</ul>
 				</nav>
 				<div class="all_phone">
@@ -145,9 +144,78 @@
 		<div class="container">
 			<h4 class="section_title section_title--right">Настоящие<span class="section_desc">параметры качества</span></h4>
 			<div class="quality__carousel">
-				<!-- <div class="carousel_wrapper"> -->
-					<div id="test-element"></div>
-				<!-- </div> -->
+				<div class="carousel">
+					<img class="carousel_pict" src="img/carousel_pict.png" alt="Изделие АйдаТуда">
+					<div class="carousel__icon active">
+						<img src="img/img1.png" alt="">
+						<div class="carousel__center__text">
+							<h6>Оригинальная ткань</h6>
+							<p>Влагоотталкивающая  ткань <br>Lux Oxford PU1000 с пропиткой <br>плотностью 260 den</p>
+						</div>
+					</div>
+					<div class="carousel__icon">
+						<img src="img/img3.png" alt="">
+						<div class="carousel__center__text">
+							<h6>Cумка</h6>
+							<p>Удобная транспортировочная <br>сумка</p>
+						</div>
+					</div>
+					<div class="carousel__icon">
+						<img src="img/img2.png" alt="">
+						<div class="carousel__center__text">
+							<h6>Длина в сдутом виде</h6>
+							<p>Длина в сдутом состоянии <br>2400 мм, в надутом <br>состоянии 2000-1900мм</p>
+						</div>
+					</div>
+					<div class="carousel__icon">
+						<img src="img/img4.png" alt="">
+						<div class="carousel__center__text">
+							<h6>2 боковых кармана</h6>
+							<p></p>
+						</div>
+					</div>
+					<div class="carousel__icon">
+						<img src="img/img5.png" alt="">
+						<div class="carousel__center__text">
+							<h6>Съемный рукав</h6>
+							<p>Съемный  внутренний ПНВД <br>рукав 50 мк</p>
+						</div>
+					</div>
+					<div class="carousel__icon">
+						<img src="img/img6.png" alt="">
+						<div class="carousel__center__text">
+							<h6>Оригинальное нанесение</h6>
+							<p></p>
+						</div>
+					</div>
+					<div class="carousel__icon">
+						<img src="img/img7.png" alt="">
+						<div class="carousel__center__text">
+							<h6>Усиленный замок</h6>
+							<p>Замок из усиленной стропы и <br>ацеталевого карабина 50мм с <br>нагрузкой более 300 кг</p>
+						</div>
+					</div>
+					<div class="carousel__icon">
+						<img src="img/img8.png" alt="">
+						<div class="carousel__center__text">
+							<h6>Усиленная вкладка</h6>
+							<p>Внутренняя вкладка воздушного <br>клапана 50мм из усиленного <br>пластика 2 мм</p>
+						</div>
+					</div>
+					<div class="carousel__icon">
+						<img src="img/img9.png" alt="">
+						<div class="carousel__center__text">
+							<h6>Уникальный клапан</h6>
+							<p>Уникальный воздушный клапан <br>из усиленной ПВХ ткани класcа <br>Lux с пропиткой плотностью 800 <br>гр/м</p>
+						</div>
+					</div>
+					<div class="carousel__center">
+						<div class="carousel__center__text">
+							<h6>Оригинальная ткань</h6>
+							<p>Влагоотталкивающая  ткань <br>Lux Oxford PU1000 с пропиткой <br>плотностью 260 den</p>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="quality__china">
 				<h4 class="section_title">Остерегайтесь<span class="section_desc">китайских подделок <br>Просим Вас не путать!</span></h4>
@@ -811,41 +879,7 @@
 	<script src="libs/respond/dest/respond.min.js"></script>
 	<![endif]-->
 	<script src="libs/jquery/dist/jquery.min.js"></script>
-	<script src="libs/slider/feature.presenter.min.js"></script>
 	<script src="libs/jquery-validation/dist/jquery.validate.min.js"></script>
 	<script src="js/main.js"></script>
-	<script>
-		var settings = [ {image: 'img/img2.png', heading: '1', description: '1'}, 
-				{image: 'img/img2.png', heading: '2', description: '2'}, 
-				{image: 'img/img2.png', heading: '3', description: '3'}, 
-				{image: 'img/img2.png', heading: '4', description: '4'},
-				{image: 'img/img2.png', heading: '5', description: '5'},
-				{image: 'img/img2.png', heading: '6', description: '6'}
-				];
-
-var options = {
-	circle_radius: 315,
-	animation_duration: 0.7,
-	normal_feature_size: 80,
-	highlighted_feature_size: 110,
-	top_margin: 0,
-	bottom_margin: 0,
-	spacing: 40,
-	min_padding: 10,
-	heading_font_size: 25,
-	description_font_size: 25,
-	animation_mode: 'css',
-	type: 'image',
-	color: '#f5f5f5',
-	border_width: 90,
-	automaticAnimation: false,
-	automaticAnimationInterval: 7,
-	text_position: 'right'
-};
-if($(window).width() < 992){
-	options['circle_radius'] = 200;
-}
-var fp = new FeaturePresenter($("#test-element"), settings, options);
-	</script>
 </body>
 </html>

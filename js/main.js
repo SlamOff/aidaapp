@@ -1,43 +1,4 @@
 $(document).ready(function() {
-	$('#topForm').validate({
-		rules: {
-			name: {
-				required: true,
-				minlength: 2,
-				maxlength: 16
-			},
-			email: {
-				required: true,
-				email: true
-			},
-			phone: {
-				required: true
-			},
-			region: {
-				required: true
-			}
-		}
-	});
-	$('#priceForm').validate({
-		rules: {
-			name: {
-				required: true,
-				minlength: 2,
-				maxlength: 16
-			},
-			email: {
-				required: true,
-				email: true
-			},
-			phone: {
-				required: true
-			},
-			region: {
-				required: true
-			}
-		}
-	});
-
 	$('.toggle_btn').click(function(){
 		$('.sandwich').toggleClass('active');
 		if($('.navigation').is(':visible')) {
@@ -151,4 +112,59 @@ $(document).ready(function() {
 		return slides.length * width + slides.length * 6;
 	}
 	$('.slider').width(widthCount());
+	// circle
+	// $('.carousel__icon').click(function(){
+	// 	var text = this.childNodes[3];
+	// 	$('.carousel__icon').removeClass('active');
+	// 	$(this).addClass('active');
+	// 	$('.carousel__center').html(text);
+	// 	//console.log(text)
+	// });
+	$('.carousel__icon').click(function(){
+		var text = this.childNodes[3];
+		$('.carousel__icon').removeClass('active');
+		$(this).addClass('active');
+		var textClone = $(text).clone();
+		$('.carousel__center').html(textClone).animate();
+	});
+
+	// validation
+	$('#topForm').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			},
+			region: {
+				required: true
+			}
+		}
+	});
+	$('#priceForm').validate({
+		rules: {
+			name: {
+				required: true,
+				minlength: 2,
+				maxlength: 16
+			},
+			email: {
+				required: true,
+				email: true
+			},
+			phone: {
+				required: true
+			},
+			region: {
+				required: true
+			}
+		}
+	});
 });
