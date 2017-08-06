@@ -1,0 +1,111 @@
+.point
+	padding-top: 14rem
+	&:before
+		height: 1842px
+		background-image: url("../img/point_bg.png")
+		top: -185px
+		z-index: -4
+	.section_title
+		margin-bottom: 4rem
+	&__table
+		border-bottom: 2px solid #dadada
+		margin-bottom: 3.5rem
+		color: #4f4f4f
+		position: relative
+		z-index: 3
+		&:after
+			display: table
+			content: ""
+			clear: both
+		.col
+			width: 16.66%
+			float: left
+			background-color: #fff
+			&:first-of-type .col__main
+				border-left: 2px solid #dadada
+			&:first-of-type .col__footer
+				border-left: 2px solid #dadada
+			&:hover
+				box-shadow: -4px 3px 17px 1px rgba(22,20,25,.16)
+				.col__header
+					background-color: $yellowColor
+			&__header
+				height: 67px
+				line-height: 67px
+				color: #fff
+				font-size: 1.6rem
+				font-weight: 500
+				text-transform: uppercase
+				text-align: center
+				transition: background-color .3s
+				background-color: $blueColor
+			&__main
+				height: 40px
+				line-height: 40px
+				padding-left: 20px
+				border: 2px solid #dadada
+				border-left: 0
+				border-top: 0
+				border-bottom: 0
+				&:nth-of-type(odd)
+					background-color: #f4f4f4
+			&__footer
+				padding-left: 20px
+				height: 40px
+				line-height: 40px
+				color: $blueColor
+				text-decoration: underline
+				cursor: pointer
+				border-right: 2px solid #dadada
+	&__place
+		display: none
+		&__item
+			padding: 2rem 0
+			display: flex
+			align-items: center
+			justify-content: space-between
+			border-bottom: 1px dashed #ccc
+			&:first-of-type
+				border-top: 1px dashed #ccc
+			.name
+				color: $blueColor
+				font-size: 2.5rem
+				span
+					font-size: 1.6rem
+					color: #4f4f4f
+					display: block
+			.info
+				color: #4f4f4f
+				font-size: 1.6rem
+				.info__header
+					margin-bottom: .6rem
+					line-height: 40px
+					&:after
+						display: table
+						clear: both
+						content: ""
+					h6
+						text-transform: uppercase
+						font-weight: 500
+					.pict
+						width: 40px
+						height: 40px
+						border-radius: 50%
+						background-color: $yellowColor
+						float: left
+						margin-right: 1rem
+						background-repeat: no-repeat
+						background-position: center
+				.info__content
+					padding-right: 6rem
+					height: 4.2rem
+				&--adress
+					.pict
+						background-image: url("../img/point_1.png")
+				&--worktime
+					.pict
+						background-image: url("../img/point_2.png")
+				&--phone
+					.pict
+						background-image: url("../img/point_3.png")
+

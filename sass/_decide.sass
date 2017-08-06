@@ -1,0 +1,149 @@
+.decide
+	padding-top: 13rem
+	.title_wrapper
+		display: flex
+		align-items: center
+		margin-bottom: 5rem
+	p.bottom_text
+		font-weight: 500
+		font-size: 2.5rem
+		color: $blueColor
+		text-align: center
+		text-transform: uppercase
+	.section_title
+		margin-right: 1.5em
+	&__table
+		margin-bottom: 5rem
+		color: #4f4f4f
+		font-size: 1.6rem
+		&__header
+			height: 67px
+			line-height: 67px
+			text-align: center
+			.col
+				float: left
+				height: 100%
+				&:first-of-type
+					width: 23%
+					background-color: $blueColor
+					color: #fff
+					font-size: 2.5rem
+					text-transform: uppercase
+				&:nth-of-type(2)
+					width: 25.5%
+					text-transform: uppercase
+					font-weight: 500
+				&:nth-of-type(3)
+					width: 26.002%
+					padding: 0 15px
+					background-color: $yellowColor
+					color: #fff
+					font-size: 2.5rem
+					text-transform: uppercase
+				&:last-of-type
+					width: 25.5%
+					text-transform: uppercase
+					font-weight: 500
+		&__main
+			.row
+				height: 66px
+				&:nth-of-type(even)
+					background-color: #f4f4f4
+				&:first-of-type
+					border-top: 2px solid #dadada
+				.col
+					float: left
+					height: 100%
+					padding: 0 24px
+					border-right: 2px solid #dadada
+					line-height: 100%
+					border-left: 0
+					display: flex
+					align-items: center
+					position: relative
+					&:first-of-type
+						border-left: 2px solid #dadada
+						text-transform: uppercase
+						font-weight: 500
+						width: 23%
+					&:nth-of-type(2)
+						width: 25.5%
+					&:nth-of-type(3)
+						width: 26.002%
+						padding: 0 15px
+					&:last-of-type
+						width: 25.5%
+				.col.yes:after
+					content: ""
+					position: absolute
+					width: 22px
+					height: 22px
+					background-image: url("../img/yes.png")
+					right: 5px
+					top: 0
+					bottom: 0
+					margin: auto
+				.col.no:after
+					content: ""
+					position: absolute
+					width: 22px
+					height: 22px
+					background-image: url("../img/no.png")
+					right: 5px
+					top: 0
+					bottom: 0
+					margin: auto
+		&__footer
+			height: 60px
+			line-height: 60px
+			border-bottom: 2px solid #dadada
+			border-right: 2px solid #dadada
+			text-align: center
+			.col
+				float: left
+				height: 100%
+				&:first-of-type
+					border-left: 2px solid #dadada
+					width: 23%
+					background-color: $blueColor
+					color: #fff
+					font-size: 2.5rem
+					text-transform: uppercase
+				&:nth-of-type(2)
+					width: 25.5%
+					text-transform: uppercase
+					font-weight: 500
+					// border-right: 2px solid #dadada
+					// border-left: 2px solid #dadada
+					background-color: #f4f4f4
+				&:nth-of-type(3)
+					width: 26.002%
+					padding: 0 15px
+					background-color: $yellowColor
+					color: #fff
+					font-size: 2.5rem
+					text-transform: uppercase
+					position: relative
+					line-height: 36px
+					font-weight: 500
+					text-transform: lowercase
+					span
+						display: block
+						line-height: normal
+						font-size: 1.6rem
+						text-decoration: line-through
+						color: #4f4f4f
+						margin-top: 4px
+					&:after
+						content: ""
+						position: absolute
+						bottom: -20px
+						height: 20px
+						left: 0
+						width: 100%
+						background-color: $yellowColor
+				&:last-of-type
+					width: 25.5%
+					text-transform: uppercase
+					font-weight: 500
+					background-color: #f4f4f4

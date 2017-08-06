@@ -1,0 +1,205 @@
+.header
+	background-image: url("../img/header_bg.png")
+	background-repeat: no-repeat
+	background-position: center top
+	height: 80px
+	position: relative
+	z-index: 300
+	.container
+		height: 100%
+		.header_wrapper
+			display: flex
+			align-items: center
+			justify-content: space-between
+			height: 100%
+	&:after
+		display: table
+		clear: both
+		content: ""
+	li
+		display: inline-block
+		color: #505050
+		font-size: 1.6rem
+		transition: all .3s
+		width: 13rem
+		cursor: pointer
+		margin-bottom: 15px
+	li.bottom
+		margin-bottom: 0
+		&:hover
+			text-decoration: underline
+			font-weight: bold
+	li.last
+		margin-right: 0
+		width: 25rem
+	&__logo
+		margin-right: 4rem
+	&__navigation
+		max-width: 680px
+		flex-wrap: wrap
+		position: relative
+		&:before
+			position: absolute
+			height: 1px
+			content: ""
+			top: 0
+			bottom: 0
+			left: 0
+			right: 12%
+			margin: auto
+			width: 83%
+			background-color: #d3c70f;
+	.all_phone
+		position: absolute
+		right: 15px
+		top: 0px
+		display: none
+		text-align: right
+		height: 100%
+		color: #fff
+			// background-color: $blueColor
+	.all_phone.showed
+		display: block
+		z-index: 2222
+	&__info
+		// float: right
+		text-align: right
+		.phone
+			color: #4e4c4c
+			font-size: 1.6rem
+			margin-bottom: 6px
+			span
+				position: relative
+				margin-left: 20px
+				margin-right: 25px
+				cursor: pointer
+				&:hover .header__info .all_phone
+					display: block
+				&:after
+					content: ""
+					position: absolute
+					border: 5px solid transparent
+					border-top: 5px solid $redColor
+					right: -15px
+					top: 4px
+		.social
+			// padding-right: 10px
+			&:after
+				display: table
+				content: ""
+				clear: both
+			a
+				margin-left: 16px
+				display: block
+				float: left
+				width: 25px
+				height: 25px
+				background-color: inherit
+				border-radius: 50%
+				text-align: center
+				transition: all .3s
+				&:hover
+					background-color: $yellowColor
+			a.popup
+				color: #fff
+				float: none
+				width: auto
+				height: auto
+				float: left
+				border-radius: 0
+				&:hover
+					text-decoration: underline
+					background-color: transparent
+.main
+	padding-top: 6rem
+	background-repeat: no-repeat
+	background-image: url('../img/main_bg.jpg')
+	background-position: center top
+	height: 1045px
+	position: relative
+	&:before
+		width: 100%
+		content: ""
+		position: absolute
+		left: 0
+		top: 570px
+		background-image: url('../img/convenience_bg.png')
+		height: 1246px
+		z-index: 0
+		background-repeat: no-repeat
+		background-position-x: center
+	&:after
+		display: table
+		content: ""
+		clear: both
+	&__title
+		margin-bottom: 8rem
+		.section_subtitle
+			display: inline-block
+			padding-left: 6rem
+			font: 3.4rem "Bebas", sans-serif
+			color: #5e5e5e
+			text-transform: uppercase
+			line-height: 3rem
+			span
+				font-size: 7.8rem
+				display: block
+				line-height: 6rem
+		.section_title
+			font-size: 12.4rem
+			line-height: 8.8rem
+			font-weight: bold
+			padding-left: 2em
+			overflow: visible
+			float: left
+			&:before
+				content: ""
+				top: 2px
+				left: auto
+				right: -30px
+	&__stock
+		float: right
+		font: 8.3rem "Bebas", sans-serif
+		margin-right: 2em
+		.stock_title
+			display: inline-block
+			font: 2.4rem "Bebas", sans-serif
+			color: #5e5e5e
+			float: left
+			span
+				font-size: 6.8rem
+				display: block
+				font-weight: bold
+		.stock_info
+			display: inline-block
+			position: relative
+			margin-left: 5rem
+			width: 28.5rem
+			height: 10.2rem
+			text-align: center
+			color: #fff
+			font-weight: bold
+			background-image: url('../img/stock_el.png')
+			span
+				font-family: "RobotoCondenced", sans-serif
+				text-transform: lowercase
+				font-weight: normal
+				font-size: 6rem
+			em
+				font-style: normal
+				display: block
+				position: absolute
+				left: 4rem
+				bottom: 98%
+				color: #5e5e5e
+				font-size: 3.6rem
+				text-decoration: line-through
+				font-weight: normal
+				span
+					font-family: "RobotoCondenced", sans-serif
+					display: inline-block
+					font-size: inherit
+
+
+// 3.6rem
+// #5e5e5e

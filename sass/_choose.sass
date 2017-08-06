@@ -1,0 +1,61 @@
+.choose
+	padding-top: 11rem
+	&:before
+		height: 1675px
+		background-image: url("../img/why_bg.png")
+		top: 0
+	.container
+		border-bottom: 1px dashed #ccc
+	.section_title
+		position: absolute
+		// margin-left: 8.5em
+	.separator
+		clear: both
+		display: table
+		height: 1px
+		width: 100%
+	&__item
+		width: 22rem
+		font-size: 1.6rem
+		color: #4f4f4f
+		margin: 4rem 6.5rem
+		float: left
+		height: 10rem
+		position: relative
+		&:before
+			position: absolute
+			font-weight: 500
+			color: $blueColor
+			font-size: 7rem
+			top: -40px
+			left: -20px
+		&:first-of-type
+			&:before
+				content: "5"
+		&:nth-of-type(2)
+			&:before
+				content: "9"
+		&:nth-of-type(4)
+			margin-bottom: 0
+			&:before
+				content: "20"
+		&:nth-of-type(5)
+			margin-bottom: 0
+			&:before
+				content: "5680"
+		&:last-of-type
+			margin-bottom: 0
+			&:before
+				content: "8780"
+		&--no_title
+			h6
+				opacity: 0
+			p
+				text-transform: uppercase
+				font-weight: 500
+		h6
+			font-weight: 500
+			text-transform: uppercase
+			margin-bottom: 2rem
+			z-index: 1
+			position: relative

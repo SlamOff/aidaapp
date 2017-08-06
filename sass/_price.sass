@@ -1,0 +1,163 @@
+.price
+	&:before
+		background-image: url("../img/price_bg.png")
+		height: 1086px
+		top: -250px
+	&__content
+		background-color: #fff
+		max-width: 1072px
+		padding: 2.5rem 10rem 2.5rem 7rem
+		margin-top: 4rem
+		border: 3px solid #eaeaea
+		margin-left: auto
+		margin-right: auto
+		&:after
+			content: ""
+			display: table
+			clear: both
+		h6
+			color: #4f4f4f
+			font-size: 2.5rem
+			text-transform: uppercase
+			text-align: center
+			font-weight: 500
+		&__photo
+			float: left
+			width: 50%
+			text-align: center
+			position: relative
+			img
+				display: block
+				position: relative
+				top: -10px
+				margin-bottom: 1.8rem
+			.dots
+				position: absolute
+				right: 14px
+				cursor: pointer
+				top: 9rem
+				.dot
+					width: 18px
+					height: 18px
+					border-radius: 50%
+					margin: 12px 0
+					&--blue
+						background-color: #39a8f5
+						border: 2px solid #fff
+						box-shadow: 0 0 3px #39a8f5
+						transform: scale(1.2)
+					&--dargreen
+						background-color: #b1bf41
+					&--rose
+						background-color: #da7e8b
+					&--lightgreen
+						background-color: #e3ff00
+					&--violet
+						background-color: #653cda
+			.call
+				position: relative
+				padding-left: 6rem
+				display: inline-block
+				margin: 0 auto
+				color: #505050
+				&:hover .call_icon
+					animation-name: phoneAnimate
+					animation-duration: .3s
+					animation-timing-function: ease-in
+					animation-iteration-count: 2
+				&_icon
+					position: absolute
+					left: 0
+					top: 5px
+					width: 42px
+					height: 42px
+					border-radius: 50%
+					background-color: $blueColor
+					background-image: url("../img/call_icon.png")
+					background-repeat: no-repeat
+					background-position: center
+				p
+					font-size: 1.6rem
+					line-height: 1.4rem
+				a
+					display: inline-block
+					font-size: 2.5rem
+					font-weight: 500
+		&__text
+			@extend .price__content__photo
+			.params
+				max-width: 34rem
+				margin: 4rem auto 2rem
+				&:after
+					content: ""
+					display: table
+					clear: both
+				&__name
+					float: left
+					text-align: left
+					p
+						color: #929292
+						font-size: 1.6rem
+				&__value
+					float: right
+					text-align: right
+					p
+						font-size: 1.6rem
+						font-weight: 500
+						color: #505050
+			.main_btn
+				margin-top: 2.4rem
+				display: block
+				margin-left: auto
+				margin-right: auto
+				max-width: 240px
+				height: 5.2rem
+			.cost
+				max-width: 29rem
+				margin: 0 auto
+				&:after
+					content: ""
+					display: table
+					clear: both
+				&__name
+					float: left
+					width: 100%
+					text-align: left
+					p
+						line-height: 3rem
+						margin: 7px 0
+						span
+							float: right
+						&:first-child
+							color: #929292
+							font-size: 1.6rem
+							span
+								display: block
+								font-size: 2.5rem
+								color: #929292
+								text-decoration: line-through
+						&:nth-child(2)
+							color: $redColor
+							font-size: 2.5rem
+							line-height: 5rem
+							span
+								font-size: 4rem
+								color: $redColor
+								font-weight: 500
+								em
+									font-style: normal
+									font-size: 2.5rem
+						&:last-child
+							color: #505050
+							font-size: 1.6rem
+							span
+								font-size: 2.5rem
+								color: #505050
+@keyframes phoneAnimate
+	from
+		transform: scale(1)
+	50%
+		transform: scale(1.3)
+	to
+		transform: scale(1)
+
