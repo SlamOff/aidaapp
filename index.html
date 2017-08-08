@@ -18,14 +18,14 @@
 				</div>
 				<nav class="header__navigation">
 					<ul>
-						<a href="#"><li>Выгоды</li></a>
-						<a href="#"><li>Прайс</li></a>
-						<a href="#"><li>Адрес</li></a>
-						<a href="#"><li class="last">Инструкция по первому запуску</li></a>
-						<a href="#"><li class="bottom">Главная</li></a>
-						<a href="#"><li class="bottom">Аэродиван </li></a>
-						<a href="#"><li class="bottom">Качество</li></a>
-						<a href="#"><li class="bottom">Цена</li></a>
+						<a class="scroll" href="#choose"><li>Выгоды</li></a>
+						<a class="scroll" href="#price"><li>Прайс</li></a>
+						<a class="scroll" href="#point"><li>Адрес</li></a>
+						<a class="scroll" href="#easy"><li class="last">Инструкция по первому запуску</li></a>
+						<a class="scroll" href="#main"><li class="bottom">Главная</li></a>
+						<a class="scroll" href="#convenience"><li class="bottom">Аэродиван</li></a>
+						<a class="scroll" href="#quality"><li class="bottom">Качество</li></a>
+						<a class="scroll" href="#price"><li class="bottom">Цена</li></a>
 					</ul>
 				</nav>
 				<div class="all_phone">
@@ -65,7 +65,7 @@
 		</div>
 	</header>
 	
-	<main class="main">
+	<main class="main" id="main">
 		<div class="container">
 			<div class="main__title">
 				<h1 class="section_title">Аэродиван</h1>
@@ -82,8 +82,14 @@
 	</main>
 	<!-- END main block -->
 
-	<section class="convenience">
-		<div class="slider_wrapper">
+	<section class="convenience" id="convenience">
+		
+		<div class="container">
+			<h5 class="convenience__title">Комфорт, удобство, простота <span>легкость везде и всегда</span></h5>
+			<img src="img/convenience_pict.png" alt="Удобство АйдаТуда" class="convenience__pict">
+			<div class="convenience__bottom">
+				<h4 class="section_title">Что такое <br>Аэродиван<span class="section_desc">и куда его взять</span></h4>
+				<div class="slider_wrapper">
 			<div class="slider">
 				<div class="slider_item">
 					<img src="img/conv_1.jpg" alt="">
@@ -110,37 +116,13 @@
 						На пляж
 					</div>
 				</div>
-				<div class="slider_item">
-					<img src="img/conv_1.jpg" alt="">
-					<div class="hint">
-						На пляж
-					</div>
-				</div>
-				<div class="slider_item">
-					<img src="img/conv_2.jpg" alt="">
-					<div class="hint">
-						На пляж
-					</div>
-				</div>
-				<div class="slider_item">
-					<img src="img/conv_3.jpg" alt="">
-					<div class="hint">
-						На пляж
-					</div>
-				</div>
 			</div>
 		</div>
-		<div class="container">
-			<h5 class="convenience__title">Комфорт, удобство, простота <span>легкость везде и всегда</span></h5>
-			<img src="img/convenience_pict.png" alt="Удобство АйдаТуда" class="convenience__pict">
-			<div class="convenience__bottom">
-				<h4 class="section_title">Что такое <br>Аэродиван<span class="section_desc">и куда его взять</span></h4>
-
 			</div>
 		</div>
 	</section>
 	
-	<section class="quality">
+	<section class="quality" id="quality">
 		<div class="container">
 			<h4 class="section_title section_title--right">Настоящие<span class="section_desc">параметры качества</span></h4>
 			<div class="quality__carousel">
@@ -228,7 +210,7 @@
 	</section>
 	
 
-	<section class="price">
+	<section class="price" id="price">
 		<div class="container">
 			<h4 class="section_title section_title--right">Цена<span class="section_desc">качество</span></h4>
 			<div class="price__content">
@@ -293,7 +275,7 @@
 		</div>
 	</section>
 
-	<section class="choose">
+	<section class="choose" id="choose">
 		<div class="container">
 			<h4 class="section_title section_title--right">Почему<span class="section_desc">Выбирают нас</span></h4>
 			<div class="choose__item">
@@ -581,7 +563,7 @@
 		</div>
 	</section>
 	
-	<section class="point">
+	<section class="point" id="point">
 		<div class="container">
 			<h4 class="section_title section_title--small">Пункты выдачи</h4>
 			<div class="point__table">
@@ -819,7 +801,7 @@
 		</div>
 	</section>
 
-	<section class="easy">
+	<section class="easy" id="easy">
 		<div class="container">
 			<div class="title_wrapper">
 				<h4 class="section_title">Как легко <br>надуть <span class="section_desc">аэродиван</span></h4>	
